@@ -7,6 +7,10 @@ module.exports = {
       tropical_blue: '#D0D6F9',
       white: '#ffffff',
     },
+    fontFamily: {
+      'bellefair': ["Bellefair", serif],
+      'barlow': ["Barlow Condensed", sans-serif],
+    }
   },
   plugins: [],
 }
