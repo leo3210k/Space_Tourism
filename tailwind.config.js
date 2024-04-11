@@ -8,8 +8,8 @@ module.exports = {
       white: '#ffffff',
     },
     fontFamily: {
-      'bellefair': ["Bellefair", serif],
-      'barlow': ["Barlow Condensed", sans-serif],
+      'bellefair': ["Bellefair", 'serif'],
+      'barlow': ["Barlow Condensed", 'sans-serif'],
     }
   },
   plugins: [],
