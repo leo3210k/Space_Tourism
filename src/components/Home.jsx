@@ -1,13 +1,9 @@
 import './Home.css';
 
-import logo from '../assets/icons/logo.svg'
-import hamburguer from '../assets/icons/icon-hamburger.svg'
-
 function Home() {
   return (
-    <div className="flex justify-between items-center p-10">
-      <img src={logo} alt="logo" />
-      <img src={hamburguer} alt="hamburguer" />
+    <div className="flex flex-col items-center">
+      <span className="text-3xl font-barlow text-white uppercase tracking-widest">so, you want to travel to</span>
     </div>
   );
 }
