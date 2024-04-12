@@ -8,6 +8,7 @@ import {
 import './index.css';
 import App from './main/App';
 import Home from './components/Home';
+import PickDestination from './components/PickDestination';
 
 const router = createBrowserRouter([
   {
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <Home />,
+      },
+      {
+        path: "/destination",
+        element: <PickDestination />,
       },
     ]
   },
