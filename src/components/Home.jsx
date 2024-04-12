@@ -10,6 +10,9 @@ function Home() {
         and not hover kind of on the edge of it. Well sit back, and relax because we’ll give you a 
         truly out of this world experience!
       </span>
+      <div className="w-48 h-48 flex justify-center items-center text-xl text-vulcan bg-white rounded-full font-bellefair uppercase mt-24">
+        explore
+      </div>
     </div>
   );
 }
