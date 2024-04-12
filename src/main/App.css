@@ -1,0 +1,6 @@
+.app {
+  height: 100svh;
+  background-image: url('../assets/home/background-home-tablet.jpg');
+  background-position: top;
+  background-size: cover;
+}
