@@ -7,11 +7,18 @@ import {
 
 import './index.css';
 import App from './main/App';
+import Home from './components/Home';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+    children: [
+      {
+        index: true,
+        element: <Home />,
+      },
+    ]
   },
 ]);
 
