@@ -1,10 +1,9 @@
 import './Header.css';
 
 import logo from '../assets/icons/logo.svg'
-import hamburguer from '../assets/icons/icon-hamburger.svg'
 
 import Menu from './Menu';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { MenuToggle } from './utils/MenuToggle';
 
 function Header() {
