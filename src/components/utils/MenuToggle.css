@@ -1,0 +1,34 @@
+.button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 50;
+}
+
+.top {
+  transition: 0.3s;
+
+}
+
+.middle {
+  transition: 0.6s;
+}
+
+.bottom {
+  transition: 0.3s;
+}
+
+.top.active {
+  transform: translate(20%, 5%) rotate(45deg);
+}
+
+.middle.active {
+  opacity: 0;
+  transform: translateX(20px);
+}
+
+.bottom.active {
+  transform: translate(-40%, 35%) rotate(-45deg);
+}
+
