@@ -3,7 +3,7 @@ const { fontFamily } = require("tailwindcss/defaultTheme")
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: ["class"],
-  content: ["app/**/*.{ts,tsx}", "components/**/*.{ts,tsx}"],
+  content: ["./src/**/*.{html,js,jsx}"],
   theme: {
     container: {
       center: true,
@@ -58,7 +58,6 @@ module.exports = {
         sm: "calc(var(--radius) - 4px)",
       },
       fontFamily: {
-        sans: ["var(--font-sans)", ...fontFamily.sans],
         'bellefair': ["Bellefair", 'serif'],
         'barlow': ["Barlow Condensed", 'sans-serif'],
       },
@@ -79,12 +78,4 @@ module.exports = {
     },
   },
   plugins: [require("tailwindcss-animate")],
-}
-
-module.exports = {
-  content: ["./src/**/*.{html,js,jsx}"],
-  theme: {
-    
-  },
-  plugins: [],
 }
