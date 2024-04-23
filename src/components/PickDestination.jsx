@@ -36,13 +36,13 @@ function PickDestination() {
         <TabsContent value="titan"></TabsContent>
       </Tabs>
       <hr className='w-7/12 border-bright_gray'/>
-      <div>
-        <span>AVG. DISTANCE</span>
-        <span>384,400 KM</span>
+      <div className='flex flex-col items-center'>
+        <span className='font-barlow text-sm text-tropical_blue tracking-widest'>AVG. DISTANCE</span>
+        <span className='font-bellefair text-3xl text-white'>384,400 KM</span>
       </div>
-      <div>
-        <span>EST. TRAVEL TIME</span>
-        <span>3 DAYS</span>
+      <div className='flex flex-col items-center'>
+        <span className='font-barlow text-sm text-tropical_blue tracking-widest'>EST. TRAVEL TIME</span>
+        <span className='font-bellefair text-3xl text-white'>3 DAYS</span>
       </div>
     </div>
   );
