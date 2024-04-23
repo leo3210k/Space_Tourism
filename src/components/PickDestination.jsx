@@ -6,6 +6,28 @@ import europa from '../assets/destination/image-europa.png'
 import titan from '../assets/destination/image-titan.png'
 
 function PickDestination() {
+  const DestinationsContent = function({ value, title, description, distance, travel_days }) {
+    return (
+      <TabsContent className='flex flex-col items-center gap-6' value={value}>
+        <div className='flex flex-col items-center'>
+          <h1 className='text-6xl font-bellefair text-white'>{title}</h1>
+          <span className='w-5/6 text-lg text-tropical_blue font-barlow line-clamp-5 text-center mt-1'>
+            {description}
+          </span>
+        </div>
+        <hr className='w-full border-bright_gray'/>
+        <div className='flex flex-col items-center'>
+          <span className='font-barlow text-sm text-tropical_blue tracking-widest'>AVG. DISTANCE</span>
+          <span className='font-bellefair text-3xl text-white'>{distance}</span>
+        </div>
+        <div className='flex flex-col items-center'>
+          <span className='font-barlow text-sm text-tropical_blue tracking-widest'>EST. TRAVEL TIME</span>
+          <span className='font-bellefair text-3xl text-white'>{travel_days}</span>
+        </div>
+      </TabsContent>
+    )
+  }
+
   return (
     <div className='flex flex-col justify-center items-center gap-6 -mt-4'>
       <div className='flex gap-5'>
@@ -23,27 +45,35 @@ function PickDestination() {
           <TabsTrigger value="europa">EUROPA</TabsTrigger>
           <TabsTrigger value="titan">TITAN</TabsTrigger>
         </TabsList>
-        <TabsContent className='flex flex-col items-center' value="moon">
-          <h1 className='text-6xl font-bellefair text-white'>MOON</h1>
-          <span className='w-5/6 text-lg text-tropical_blue font-barlow line-clamp-5 text-center mt-1'>
-            See our planet as you’ve never seen it before. A perfect relaxing trip 
-            away to help regain perspective and come back refreshed. While you’re there, 
-            take in some history by visiting the Luna 2 and Apollo 11 landing sites.
-          </span>
-        </TabsContent>
-        <TabsContent value="mars"></TabsContent>
-        <TabsContent value="europa"></TabsContent>
-        <TabsContent value="titan"></TabsContent>
+        <DestinationsContent value="moon" title="MOON" description="
+          See our planet as you’ve never seen it before. A perfect relaxing trip 
+          away to help regain perspective and come back refreshed. While you’re there, 
+          take in some history by visiting the Luna 2 and Apollo 11 landing sites."
+          distance="384,400 KM"
+          travel_days="3 DAYS"
+          />
+          <DestinationsContent value="mars" title="MOON" description="
+          See our planet as you’ve never seen it before. A perfect relaxing trip 
+          away to help regain perspective and come back refreshed. While you’re there, 
+          take in some history by visiting the Luna 2 and Apollo 11 landing sites."
+          distance="384,400 KM"
+          travel_days="3 DAYS"
+          />
+          <DestinationsContent value="europa" title="MOON" description="
+          See our planet as you’ve never seen it before. A perfect relaxing trip 
+          away to help regain perspective and come back refreshed. While you’re there, 
+          take in some history by visiting the Luna 2 and Apollo 11 landing sites."
+          distance="384,400 KM"
+          travel_days="3 DAYS"
+          />
+          <DestinationsContent value="titan" title="MOON" description="
+          See our planet as you’ve never seen it before. A perfect relaxing trip 
+          away to help regain perspective and come back refreshed. While you’re there, 
+          take in some history by visiting the Luna 2 and Apollo 11 landing sites."
+          distance="384,400 KM"
+          travel_days="3 DAYS"
+          />
       </Tabs>
-      <hr className='w-7/12 border-bright_gray'/>
-      <div className='flex flex-col items-center'>
-        <span className='font-barlow text-sm text-tropical_blue tracking-widest'>AVG. DISTANCE</span>
-        <span className='font-bellefair text-3xl text-white'>384,400 KM</span>
-      </div>
-      <div className='flex flex-col items-center'>
-        <span className='font-barlow text-sm text-tropical_blue tracking-widest'>EST. TRAVEL TIME</span>
-        <span className='font-bellefair text-3xl text-white'>3 DAYS</span>
-      </div>
     </div>
   );
 }
