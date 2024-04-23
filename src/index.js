@@ -9,6 +9,7 @@ import './index.css';
 import App from './main/App';
 import Home from './components/Home';
 import PickDestination from './components/PickDestination';
+import Crew from './components/Crew';
 
 const router = createBrowserRouter([
   {
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
       {
         path: "/destination",
         element: <PickDestination />,
+      },
+      {
+        path: "/crew",
+        element: <Crew />,
       },
     ]
   },
