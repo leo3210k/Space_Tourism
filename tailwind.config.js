@@ -76,6 +76,10 @@ module.exports = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
+      backgroundImage: {
+        'home-mobile': "url('/src/assets/home/background-home-tablet.jpg')",
+        'destination-mobile': "url('/src/assets/destination/background-destination-tablet.jpg')"
+      }
     },
   },
   plugins: [require("tailwindcss-animate")],
