@@ -23,9 +23,9 @@ function PickDestination() {
           <TabsTrigger value="europa">EUROPA</TabsTrigger>
           <TabsTrigger value="titan">TITAN</TabsTrigger>
         </TabsList>
-        <TabsContent value="moon">
+        <TabsContent className='flex flex-col items-center' value="moon">
           <h1 className='text-6xl font-bellefair text-white'>MOON</h1>
-          <span className='w-4/6 text-lg text-white font-barlow line-clamp-5 text-center mt-6'>
+          <span className='w-5/6 text-lg text-white font-barlow line-clamp-5 text-center mt-6'>
             See our planet as you’ve never seen it before. A perfect relaxing trip 
             away to help regain perspective and come back refreshed. While you’re there, 
             take in some history by visiting the Luna 2 and Apollo 11 landing sites.
