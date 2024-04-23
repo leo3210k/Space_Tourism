@@ -67,11 +67,11 @@ function PickDestination() {
           travel_days="3 YEARS"
           />
           <DestinationsContent value="titan" title="MOON" description="
-          See our planet as you’ve never seen it before. A perfect relaxing trip 
-          away to help regain perspective and come back refreshed. While you’re there, 
-          take in some history by visiting the Luna 2 and Apollo 11 landing sites."
-          distance="384,400 KM"
-          travel_days="3 DAYS"
+          The only moon known to have a dense atmosphere other than Earth, Titan is a 
+          home away from home (just a few hundred degrees colder!). As a bonus, you get 
+          striking views of the Rings of Saturn."
+          distance="1.6 BIL. km"
+          travel_days="7 YEARS"
           />
       </Tabs>
     </div>
