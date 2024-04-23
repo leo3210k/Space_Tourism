@@ -18,6 +18,7 @@ module.exports = {
         tropical_blue: '#D0D6F9',
         white: '#ffffff',
         dusty_gray: '#979797',
+        bright_gray: '#383B4B',
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
