@@ -12,6 +12,8 @@ function App() {
       return 'home-mobile'
     } else if(location.pathname === '/destination') {
       return 'destination-mobile'
+    } else if(location.pathname === '/crew') {
+      return 'crew-mobile'
     }
   }
 
