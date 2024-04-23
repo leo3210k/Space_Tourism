@@ -35,6 +35,7 @@ function PickDestination() {
         <TabsContent value="europa"></TabsContent>
         <TabsContent value="titan"></TabsContent>
       </Tabs>
+      <hr className='w-7/12 border-bright_gray'/>
     </div>
   );
 }
