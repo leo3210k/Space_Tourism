@@ -15,7 +15,7 @@ function PickDestination() {
             {description}
           </span>
         </div>
-        <hr className='w-full border-bright_gray'/>
+        <hr className='w-11/12 border-bright_gray'/>
         <div className='flex flex-col items-center gap-2'>
           <span className='font-barlow text-sm text-tropical_blue tracking-widest'>AVG. DISTANCE</span>
           <span className='font-bellefair text-3xl text-white'>{distance}</span>
