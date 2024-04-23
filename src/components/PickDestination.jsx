@@ -23,7 +23,9 @@ function PickDestination() {
           <TabsTrigger value="europa">EUROPA</TabsTrigger>
           <TabsTrigger value="titan">TITAN</TabsTrigger>
         </TabsList>
-        <TabsContent value="moon">Oláaaaaaaaaaaaaaaaaaaaaaaaaa</TabsContent>
+        <TabsContent value="moon">
+          <h1 className='text-6xl font-bellefair text-white'>MOON</h1>
+        </TabsContent>
         <TabsContent value="mars"></TabsContent>
         <TabsContent value="europa"></TabsContent>
         <TabsContent value="titan"></TabsContent>
