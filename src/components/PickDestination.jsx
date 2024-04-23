@@ -1,5 +1,5 @@
 import './PickDestination.css';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs"
 
 function PickDestination() {
   return (
