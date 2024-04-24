@@ -79,7 +79,7 @@ module.exports = {
       backgroundImage: {
         'home-mobile': "url('/src/assets/home/background-home-tablet.jpg')",
         'destination-mobile': "url('/src/assets/destination/background-destination-tablet.jpg')",
-        'crew-mobile': "url('/src/assets/crew/background-crew-mobile.jpg')"
+        'crew-mobile': "url('/src/assets/crew/background-crew-tablet.jpg')"
       }
     },
   },
