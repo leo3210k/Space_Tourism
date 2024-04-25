@@ -35,8 +35,8 @@ const EmblaCarousel = (props) => {
               <img className='h-56' src={person.src} alt={person.name} />
               <hr className='w-11/12 border-bright_gray'/>
               <div className='flex flex-col items-center mt-16'>
-                <span>{person.title}</span>
-                <span>{person.name}</span>
+                <span className='font-bellefair text-lg text-white opacity-50 uppercase'>{person.title}</span>
+                <span className='font-bellefair text-white'>{person.name}</span>
                 <span>{person.description}</span>
               </div>
             </div>
