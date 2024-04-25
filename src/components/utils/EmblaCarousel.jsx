@@ -34,7 +34,7 @@ const EmblaCarousel = (props) => {
             <div className="embla__slide flex flex-col items-center" key={person}>
               <img className='h-56' src={person.src} alt={person.name} />
               <hr className='w-11/12 border-bright_gray'/>
-              <div>
+              <div className='flex flex-col items-center mt-16'>
                 <span>{person.title}</span>
                 <span>{person.name}</span>
                 <span>{person.description}</span>
