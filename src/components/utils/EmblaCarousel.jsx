@@ -1,33 +1,45 @@
-import React from 'react'
-import useEmblaCarousel from 'embla-carousel-react'
-import ClassNames from 'embla-carousel-class-names'
+import React, { useCallback } from 'react'
 import { DotButton, useDotButton } from './EmblaCarouselDotButton'
+import Autoplay from 'embla-carousel-autoplay'
+import useEmblaCarousel from 'embla-carousel-react'
+import './css/base.css'
+import './css/embla.css'
 
 const EmblaCarousel = (props) => {
   const { slides, options } = props
-  const [emblaRef, emblaApi] = useEmblaCarousel(options, [ClassNames()])
+  const [emblaRef, emblaApi] = useEmblaCarousel(options, [Autoplay()])
 
-  const { selectedIndex, scrollSnaps, onDotButtonClick } =
-    useDotButton(emblaApi)
+  const onNavButtonClick = useCallback((emblaApi) => {
+    const autoplay = emblaApi?.plugins()?.autoplay
+    if (!autoplay) return
+
+    const resetOrStop =
+      autoplay.options.stopOnInteraction === false
+        ? autoplay.reset
+        : autoplay.stop
+
+    resetOrStop()
+  }, [])
+
+  const { selectedIndex, scrollSnaps, onDotButtonClick } = useDotButton(
+    emblaApi,
+    onNavButtonClick
+  )
 
   return (
-    <div className="embla">
+    <section className="embla relative">
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container">
-          {slides.map((index) => (
-            <div className="embla__slide embla__class-names" key={index}>
-              <img
-                className="embla__slide__img"
-                src={`https://picsum.photos/600/350?v=${index}`}
-                alt="Your alt text"
-              />
+          {slides.map((person) => (
+            <div className="embla__slide flex flex-col items-center" key={person}>
+              <img className='w-44' src={person.src} alt={person.name} />
+              <hr className='w-11/12 border-bright_gray'/>
             </div>
           ))}
         </div>
       </div>
 
-      <div className="embla__controls">
-
+      <div className="embla__controls absolute">
         <div className="embla__dots">
           {scrollSnaps.map((_, index) => (
             <DotButton
@@ -40,7 +52,7 @@ const EmblaCarousel = (props) => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 
