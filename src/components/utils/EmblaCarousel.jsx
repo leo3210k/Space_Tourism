@@ -32,7 +32,7 @@ const EmblaCarousel = (props) => {
         <div className="embla__container">
           {slides.map((person) => (
             <div className="embla__slide flex flex-col items-center" key={person}>
-              <img className='w-44' src={person.src} alt={person.name} />
+              <img className='h-56' src={person.src} alt={person.name} />
               <hr className='w-11/12 border-bright_gray'/>
             </div>
           ))}
