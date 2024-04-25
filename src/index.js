@@ -10,6 +10,7 @@ import App from './main/App';
 import Home from './components/Home';
 import PickDestination from './components/PickDestination';
 import Crew from './components/Crew';
+import Technology from './components/Technology';
 
 const router = createBrowserRouter([
   {
@@ -19,14 +20,15 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <Home />,
-      },
-      {
+      },{
         path: "/destination",
         element: <PickDestination />,
-      },
-      {
+      },{
         path: "/crew",
         element: <Crew />,
+      },{
+        path: "/technology",
+        element: <Technology />,
       },
     ]
   },
