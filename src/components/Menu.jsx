@@ -17,10 +17,10 @@ function Menu({ isSideMenuOpen }) {
           <div className="font-bold">02</div>
           <span>crew</span>
         </Link>
-        <li className="flex gap-4 text-2xl font-light tracking-widest uppercase">
+        <Link to={"/technology"} className="flex gap-4 text-2xl font-light tracking-widest uppercase">
           <div className="font-bold">03</div>
           <span>technology</span>
-        </li>
+        </Link>
       </ol>
     </div>
   );
