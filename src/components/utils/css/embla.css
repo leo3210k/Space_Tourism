@@ -46,6 +46,7 @@
   align-items: center;
   justify-content: center;
   border-radius: 50%;
+  background-color: #979797;
 }
 .embla__dot--selected {
   box-shadow: inset 0 0 0 0.2rem var(--text-body);
