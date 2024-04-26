@@ -1,5 +1,5 @@
 import './Crew.css';
-import EmblaCarousel from './utils/EmblaCarousel';
+import CrewCarousel from './utils/CrewCarousel';
 
 function Crew() {
   const OPTIONS = { loop: true }
@@ -37,7 +37,7 @@ function Crew() {
         <span className='text-2xl font-barlow font-bold text-dusty_gray tracking-widest opacity-50'>02</span>
         <span className='text-2xl font-barlow text-white uppercase tracking-widest'>meet your crew</span>
       </div>
-      <EmblaCarousel slides={crew} options={OPTIONS} />
+      <CrewCarousel slides={crew} options={OPTIONS} />
     </div>
   );
 }
