@@ -50,7 +50,7 @@
 }
 .embla__dot::after {
 }
-.embla__dot--selected {
+.embla__dot_selected {
   box-shadow: inset 0 0 0 0.2rem var(--text-body);
   color: #0B0D17;
   background-color: white;
