@@ -10,7 +10,7 @@ function Header() {
   const [isSideMenuOpen, setIsSideMenuOpen] = useState(false);
 
   return (
-    <header className="relative flex justify-between items-center p-10">
+    <header className="relative flex justify-between items-center px-6 pt-6">
       <img src={logo} alt="logo" />
       <MenuToggle isSideMenuOpen={isSideMenuOpen} toggle={() => setIsSideMenuOpen(!isSideMenuOpen)} />
       <Menu isSideMenuOpen={isSideMenuOpen}/>
