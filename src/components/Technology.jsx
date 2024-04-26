@@ -25,8 +25,8 @@ function Technology() {
   return (
     <div className='flex flex-col justify-center items-center gap-8 -mt-4'>
       <div className='flex gap-5'>
-        <span className='text-2xl font-barlow font-bold text-dusty_gray tracking-widest opacity-50'>02</span>
-        <span className='text-2xl font-barlow text-white uppercase tracking-widest'>meet your crew</span>
+        <span className='text-2xl font-barlow font-bold text-dusty_gray tracking-widest opacity-50'>03</span>
+        <span className='text-2xl font-barlow text-white uppercase tracking-widest'>SPACE LAUNCH 101</span>
       </div>
       <TechnologyCarousel slides={technologys} options={OPTIONS} />
     </div>
