@@ -27,11 +27,11 @@ const EmblaCarousel = (props) => {
   )
 
   return (
-    <section className="embla relative">
-      <div className="embla__viewport" ref={emblaRef}>
-        <div className="embla__container">
+    <section className={`${styles.embla} relative`}>
+      <div className={`${styles.embla__viewport}`} ref={emblaRef}>
+        <div className={`${styles.embla__container}`}>
           {slides.map((technology) => (
-            <div className="embla__slide flex flex-col items-center" key={technology}>
+            <div className={`${styles.embla__slide} flex flex-col items-center`} key={technology}>
               <img className='h-56' src={technology.src} alt={technology.name} />
               <div className='flex flex-col items-center mt-16'>
                 <span className='font-bellefair text-lg text-white opacity-50 uppercase'>THE TERMINOLOGY…</span>
@@ -43,16 +43,16 @@ const EmblaCarousel = (props) => {
         </div>
       </div>
 
-      <div className="embla__controls absolute inset-x-0 top-64">
-        <div className="embla__dots">
+      <div className={`${styles.embla__controls} absolute inset-x-0 top-64`}>
+        <div className={`${styles.embla__dots}`}>
           {scrollSnaps.map((_, index) => {
             const number = ['1', '2', '3']
             return(
               <DotButton
                 key={index}
                 onClick={() => onDotButtonClick(index)}
-                className={`embla__dot font-bellefair after:content-['${index}']`.concat(
-                  index === selectedIndex ? ' embla__dot--selected' : ''
+                className={`${styles.embla__dot} font-bellefair after:content-['${index}']`.concat(
+                  index === selectedIndex ? ` ${styles.embla__dot_selected}` : ''
                 )}
               />
             )
