@@ -32,7 +32,7 @@ function Crew() {
   ]
 
   return (
-    <div className='flex flex-col justify-center items-center gap-8 -mt-4'>
+    <div className='flex flex-col justify-center items-center gap-6 mt-5'>
       <div className='flex gap-5'>
         <span className='text-2xl font-barlow font-bold text-dusty_gray tracking-widest opacity-50'>02</span>
         <span className='text-2xl font-barlow text-white uppercase tracking-widest'>meet your crew</span>
