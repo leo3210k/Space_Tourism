@@ -23,7 +23,7 @@ function Technology() {
   ]
 
   return (
-    <div className='flex flex-col justify-center items-center gap-8 mt-5'>
+    <div className='flex flex-col justify-center items-center gap-6 mt-5'>
       <div className='flex gap-4'>
         <span className='text-base font-barlow font-bold text-dusty_gray tracking-widest opacity-50'>03</span>
         <span className='text-base font-barlow text-white uppercase tracking-widest'>SPACE LAUNCH 101</span>
