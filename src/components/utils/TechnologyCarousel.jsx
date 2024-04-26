@@ -34,9 +34,9 @@ const EmblaCarousel = (props) => {
             <div className={`${styles.embla__slide} flex flex-col items-center`} key={technology}>
               <img className='h-56' src={technology.src} alt={technology.name} />
               <div className='flex flex-col items-center mt-20'>
-                <span className='font-barlow text-sm text-tropical_blue opacity-50 uppercase'>THE TERMINOLOGY…</span>
+                <span className='font-barlow text-sm text-tropical_blue opacity-50 uppercase mb-1'>THE TERMINOLOGY…</span>
                 <span className='font-bellefair text-2xl text-white uppercase'>{technology.name}</span>
-                <span className='w-5/6 font-barlow text-base text-center text-tropical_blue mt-4'>{technology.description}</span>
+                <span className='w-5/6 font-barlow text-base text-center text-tropical_blue mt-3'>{technology.description}</span>
               </div>
             </div>
           ))}
