@@ -27,11 +27,11 @@ const EmblaCarousel = (props) => {
   )
 
   return (
-    <section className="embla relative">
-      <div className="embla__viewport" ref={emblaRef}>
-        <div className="embla__container">
+    <section className={`${styles.embla} relative`}>
+      <div className={`${styles.embla__viewport}`} ref={emblaRef}>
+        <div className={`${styles.embla__container}`}>
           {slides.map((person) => (
-            <div className="embla__slide flex flex-col items-center" key={person}>
+            <div className={`${styles.embla__slide} flex flex-col items-center`} key={person}>
               <img className='h-56' src={person.src} alt={person.name} />
               <hr className='w-11/12 border-bright_gray'/>
               <div className='flex flex-col items-center mt-16'>
@@ -44,14 +44,14 @@ const EmblaCarousel = (props) => {
         </div>
       </div>
 
-      <div className="embla__controls absolute inset-x-0 top-64">
-        <div className="embla__dots">
+      <div className={`${styles.embla__controls} absolute inset-x-0 top-64`}>
+        <div className={`${styles.embla__dots}`}>
           {scrollSnaps.map((_, index) => (
             <DotButton
               key={index}
               onClick={() => onDotButtonClick(index)}
-              className={'embla__dot'.concat(
-                index === selectedIndex ? ' embla__dot--selected' : ''
+              className={`${styles.embla__dot}`.concat(
+                index === selectedIndex ? ` ${styles.embla__dot_selected}` : ''
               )}
             />
           ))}
