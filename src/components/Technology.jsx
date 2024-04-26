@@ -1,4 +1,4 @@
-import './Crew.css';
+import './Technology.css';
 import TechnologyCarousel from './utils/TechnologyCarousel';
 
 function Technology() {
