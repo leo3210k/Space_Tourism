@@ -3,7 +3,7 @@ import { DotButton, useDotButton } from './EmblaCarouselDotButton'
 import Autoplay from 'embla-carousel-autoplay'
 import useEmblaCarousel from 'embla-carousel-react'
 import './css/base.css'
-import './css/technology-carousel.css'
+import './css/TechnologyCarousel.module.css'
 
 const EmblaCarousel = (props) => {
   const { slides, options } = props
@@ -45,15 +45,18 @@ const EmblaCarousel = (props) => {
 
       <div className="embla__controls absolute inset-x-0 top-64">
         <div className="embla__dots">
-          {scrollSnaps.map((_, index) => (
-            <DotButton
-              key={index}
-              onClick={() => onDotButtonClick(index)}
-              className={'embla__dot'.concat(
-                index === selectedIndex ? ' embla__dot--selected' : ''
-              )}
-            />
-          ))}
+          {scrollSnaps.map((_, index) => {
+            const number = ['1', '2', '3']
+            return(
+              <DotButton
+                key={index}
+                onClick={() => onDotButtonClick(index)}
+                className={`embla__dot font-bellefair after:content-['${index}']`.concat(
+                  index === selectedIndex ? ' embla__dot--selected' : ''
+                )}
+              />
+            )
+          })}
         </div>
       </div>
     </section>
