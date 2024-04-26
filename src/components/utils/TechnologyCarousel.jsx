@@ -3,7 +3,7 @@ import { DotButton, useDotButton } from './EmblaCarouselDotButton'
 import Autoplay from 'embla-carousel-autoplay'
 import useEmblaCarousel from 'embla-carousel-react'
 import './css/base.css'
-import './css/embla.css'
+import './css/technology-carousel.css'
 
 const EmblaCarousel = (props) => {
   const { slides, options } = props
