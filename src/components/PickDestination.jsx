@@ -31,8 +31,8 @@ function PickDestination() {
   return (
     <div className='flex flex-col justify-center items-center gap-6 mt-5'>
       <div className='flex gap-4'>
-        <span className='text-2xl font-barlow font-bold text-dusty_gray tracking-widest opacity-50'>01</span>
-        <span className='text-2xl font-barlow text-white uppercase tracking-widest'>pick your destination</span>
+        <span className='text-base font-barlow font-bold text-dusty_gray tracking-widest opacity-50'>01</span>
+        <span className='text-base font-barlow text-white uppercase tracking-widest'>pick your destination</span>
       </div>
       <Tabs defaultValue="moon" className="w-[400px] flex flex-col items-center text-white">
         <TabsContent value="moon"><img src={moon} className='w-40 h-40' alt="moon" /></TabsContent>
