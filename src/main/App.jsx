@@ -7,10 +7,9 @@ import { useEffect, useState } from 'react';
 
 function App() {
   let location = useLocation();
-  const [currentLocation, setCurrentLocation] = useState('');
+  const [currentLocation, setCurrentLocation] = useState('home-mobile');
 
   useEffect(() => {
-    console.log(location.pathname)
     if(location.pathname === '/') {
       setCurrentLocation('home-mobile')
     } else if(location.pathname === '/destination') {
@@ -21,7 +20,7 @@ function App() {
   }, [location.pathname])
 
   return (
-    <div className={`app bg-home-mobile`}>
+    <div className={`app min-h-screen bg-home-mobile`}>
       <Header />
       <Outlet />
     </div>
