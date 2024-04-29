@@ -11,7 +11,7 @@ const Path = (props) => (
 );
 
 export const MenuToggle = ({ isSideMenuOpen, toggle }) => (
-  <svg className="button" onClick={toggle} width="30" height="30" viewBox="0 0 23 18">
+  <svg className="relative flex justify-center items-center mr-6 mt-6 z-50" onClick={toggle} width="30" height="30" viewBox="0 0 23 18">
     <Path
       d="M 2 2.5 L 20 2.5"
       className={`top ${isSideMenuOpen ? 'active' : ''}`}

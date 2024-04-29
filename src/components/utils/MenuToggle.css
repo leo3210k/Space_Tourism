@@ -1,11 +1,3 @@
-.button {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 50;
-}
-
 .top {
   transition: 0.3s;
 
