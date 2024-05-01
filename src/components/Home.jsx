@@ -5,7 +5,7 @@ function Home() {
     <div className="flex flex-col items-center mt-16">
       <span className="text-base md:text-xl font-barlow text-tropical_blue uppercase tracking-widest">so, you want to travel to</span>
       <h1 className="text-8xl md:text-[9.375rem] font-bellefair text-white uppercase mt-8">space</h1>
-      <span className="w-5/6 text-base text-tropical_blue font-barlow line-clamp-5 text-center leading-7 mt-8">
+      <span className="w-5/6 text-base md:text-lg text-tropical_blue font-barlow line-clamp-5 text-center leading-7 mt-8">
         Let’s face it; if you want to go to space, you might as well genuinely go to outer space 
         and not hover kind of on the edge of it. Well sit back, and relax because we’ll give you a 
         truly out of this world experience!
