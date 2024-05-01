@@ -3,7 +3,6 @@ import { Link, useLocation } from 'react-router-dom';
 
 function CustomLink({ path, name }) {
   let location = useLocation();
-  console.log(location)
 
   return (
     <Link to={path} className="relative group py-10">
