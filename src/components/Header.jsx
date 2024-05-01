@@ -2,7 +2,7 @@ import './Header.css';
 
 import logo from '../assets/icons/logo.svg'
 
-import Menu from './Menu';
+import SideMenu from './SideMenu';
 import { useState } from 'react';
 import { MenuToggle } from './utils/MenuToggle';
 
@@ -13,7 +13,7 @@ function Header() {
     <header className="relative flex justify-between items-center">
       <img src={logo} className='ml-6 mt-6' alt="logo" />
       <MenuToggle isSideMenuOpen={isSideMenuOpen} toggle={() => setIsSideMenuOpen(!isSideMenuOpen)} />
-      <Menu isSideMenuOpen={isSideMenuOpen}/>
+      <SideMenu isSideMenuOpen={isSideMenuOpen}/>
     </header>
   );
 }
