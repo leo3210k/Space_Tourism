@@ -3,18 +3,19 @@ import { Link, useLocation } from 'react-router-dom';
 
 function CustomLink({ path, name }) {
   let location = useLocation();
+  console.log(location)
 
   return (
     <Link to={path} className="relative">
       <li>
         {name}
         <span className={`
-        h-[1px] inline-block
-        absolute left-0 -bottom-0.5
-        group-hover:w-full transition-[width] ease duration-300
-        underline-offset-4
-        ${router.asPath === href ? "w-full" : "w-0"}
-        `}
+          h-[1px] inline-block
+          absolute left-0 -bottom-0.5 bg-white
+          group-hover:w-full transition-[width] ease duration-300
+          underline-offset-4
+          ${location.pathname === path ? "w-full" : "w-0"}
+          `}
         >&nbsp;</span>
       </li>
     </Link>
