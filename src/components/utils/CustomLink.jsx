@@ -6,7 +6,7 @@ function CustomLink({ path, name }) {
   console.log(location)
 
   return (
-    <Link to={path} className="relative group py-8">
+    <Link to={path} className="relative group py-10">
       <li>
         {name}
         <span className={`
