@@ -11,7 +11,7 @@ function Header() {
 
   return (
     <header className="relative flex justify-between items-center">
-      <img src={logo} className='ml-6 mt-6' alt="logo" />
+      <img src={logo} className='ml-6' alt="logo" />
       <MenuToggle isSideMenuOpen={isSideMenuOpen} toggle={() => setIsSideMenuOpen(!isSideMenuOpen)} />
       <SideMenu isSideMenuOpen={isSideMenuOpen}/>
       <ol className='hidden md:flex gap-x-10 text-white uppercase p-10'>
