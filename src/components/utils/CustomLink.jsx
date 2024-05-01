@@ -1,9 +1,11 @@
 import './CustomLink.css';
+import { Link } from 'react-router-dom';
 
-function CustomLink() {
+function CustomLink({ path, name }) {
   return (
-    <header className="">
-    </header>
+    <Link to={path} className="relative">
+      <li>{name}</li>
+    </Link>
   );
 }
 
