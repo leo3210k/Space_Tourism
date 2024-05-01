@@ -14,6 +14,12 @@ function Header() {
       <img src={logo} className='ml-6 mt-6' alt="logo" />
       <MenuToggle isSideMenuOpen={isSideMenuOpen} toggle={() => setIsSideMenuOpen(!isSideMenuOpen)} />
       <SideMenu isSideMenuOpen={isSideMenuOpen}/>
+      <ol className='flex gap-x-10 text-white uppercase'>
+        <li>home</li>
+        <li>destination</li>
+        <li>crew</li>
+        <li>technology</li>
+      </ol>
     </header>
   );
 }
