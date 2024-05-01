@@ -10,7 +10,7 @@ function CustomLink({ path, name }) {
       <li>
         {name}
         <span className={`
-          h-[1px] inline-block
+          h-[3px] inline-block
           absolute left-0 bottom-0 bg-white
           group-hover:w-full transition-[width] ease duration-300
           underline-offset-4 
