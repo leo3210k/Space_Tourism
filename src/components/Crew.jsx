@@ -34,7 +34,7 @@ function Crew() {
   return (
     <div className='flex flex-col justify-center items-center gap-6 md:gap-12 mt-5 md:mt-8'>
       <div className='flex md:self-start gap-4 text-base md:text-xl font-barlow tracking-widest md:ml-10'>
-        <span className='text-base font-barlow font-bold text-dusty_gray tracking-widest opacity-50'>02</span>
+        <span className='font-bold text-white/25'>02</span>
         <span className='text-base font-barlow text-white uppercase tracking-widest'>meet your crew</span>
       </div>
       <CrewCarousel slides={crew} options={OPTIONS} />
