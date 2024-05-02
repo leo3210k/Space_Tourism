@@ -8,7 +8,7 @@ import titan from '../assets/destination/image-titan.png'
 function PickDestination() {
   const DestinationsContent = function({ value, title, description, distance, travel_days }) {
     return (
-      <TabsContent className='flex flex-col items-center gap-6' value={value}>
+      <TabsContent className='flex flex-col items-center gap-6 md:gap-12' value={value}>
         <div className='flex flex-col items-center'>
           <h1 className='text-6xl md:text-7xl font-bellefair text-white'>{title}</h1>
           <span className='w-5/6 text-base md:text-lg text-tropical_blue font-barlow line-clamp-5 text-center mt-1 md:mt-5'>
