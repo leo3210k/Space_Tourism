@@ -44,7 +44,7 @@ const EmblaCarousel = (props) => {
         </div>
       </div>
 
-      <div className={`${styles.embla__controls} absolute inset-x-0 top-64`}>
+      <div className={`${styles.embla__controls} absolute inset-x-0 top-64 md:top-[16.2rem]`}>
         <div className={`${styles.embla__dots}`}>
           {scrollSnaps.map((_, index) => (
             <DotButton
