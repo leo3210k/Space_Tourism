@@ -11,7 +11,7 @@ function PickDestination() {
       <TabsContent className='flex flex-col items-center gap-6' value={value}>
         <div className='flex flex-col items-center'>
           <h1 className='text-6xl md:text-7xl font-bellefair text-white'>{title}</h1>
-          <span className='w-5/6 text-base md:text-lg text-tropical_blue font-barlow line-clamp-5 text-center mt-1'>
+          <span className='w-5/6 text-base md:text-lg text-tropical_blue font-barlow line-clamp-5 text-center mt-1 md:mt-5'>
             {description}
           </span>
         </div>
