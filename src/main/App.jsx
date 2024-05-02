@@ -16,11 +16,13 @@ function App() {
       setCurrentLocation('destination-mobile')
     } else if(location.pathname === '/crew') {
       setCurrentLocation('crew-mobile')
+    } else if(location.pathname === '/technology') {
+      setCurrentLocation('technology-mobile')
     }
   }, [location.pathname])
 
   return (
-    <div className={`app min-h-screen bg-home-mobile`}>
+    <div className={`app min-h-screen bg-${currentLocation}`}>
       <Header />
       <Outlet />
     </div>
