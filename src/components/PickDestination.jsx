@@ -31,7 +31,7 @@ function PickDestination() {
   return (
     <div className='flex flex-col justify-center items-center gap-6 mt-5'>
       <div className='flex md:self-start gap-4 text-base font-barlow md:ml-10'>
-        <span className='font-bold text-dusty_gray tracking-widest opacity-50'>01</span>
+        <span className='font-bold text-white/25'>01</span>
         <span className='text-white uppercase tracking-widest'>pick your destination</span>
       </div>
       <Tabs defaultValue="moon" className="w-[400px] flex flex-col items-center text-white">
