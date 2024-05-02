@@ -36,7 +36,7 @@ const EmblaCarousel = (props) => {
               <hr className='md:hidden w-10/12 border-bright_gray'/>
               <div className='flex flex-col items-center mt-16'>
                 <span className='font-bellefair text-base md:text-2xl text-white opacity-50 uppercase mb-1'>{person.title}</span>
-                <span className='font-bellefair text-2xl text-white uppercase'>{person.name}</span>
+                <span className='font-bellefair text-2xl md:text-4xl text-white uppercase'>{person.name}</span>
                 <span className='w-5/6 font-barlow text-base text-center text-tropical_blue mt-3'>{person.description}</span>
               </div>
             </div>
