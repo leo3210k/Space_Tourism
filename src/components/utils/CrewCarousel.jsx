@@ -37,14 +37,14 @@ const EmblaCarousel = (props) => {
               <div className='flex flex-col items-center mt-16 md:mt-0'>
                 <span className='font-bellefair text-base md:text-2xl text-white opacity-50 uppercase mb-1'>{person.title}</span>
                 <span className='font-bellefair text-2xl md:text-4xl text-white uppercase'>{person.name}</span>
-                <span className='w-5/6 md:w-4/6 font-barlow text-base md:text-lg text-center text-tropical_blue mt-3'>{person.description}</span>
+                <span className='w-5/6 md:w-4/6 font-barlow text-base md:text-lg text-center text-tropical_blue md:leading-8 mt-3'>{person.description}</span>
               </div>
             </div>
           ))}
         </div>
       </div>
 
-      <div className={`${styles.embla__controls} absolute inset-x-0 top-64 md:top-[16.2rem]`}>
+      <div className={`${styles.embla__controls} absolute inset-x-0 top-64 md:top-56`}>
         <div className={`${styles.embla__dots}`}>
           {scrollSnaps.map((_, index) => (
             <DotButton
