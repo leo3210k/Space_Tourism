@@ -30,7 +30,7 @@ function PickDestination() {
 
   return (
     <div className='flex flex-col justify-center items-center gap-6 mt-5'>
-      <div className='flex gap-4'>
+      <div className='flex md:self-start gap-4'>
         <span className='text-base font-barlow font-bold text-dusty_gray tracking-widest opacity-50'>01</span>
         <span className='text-base font-barlow text-white uppercase tracking-widest'>pick your destination</span>
       </div>
