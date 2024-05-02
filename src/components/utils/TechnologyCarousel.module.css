@@ -5,9 +5,6 @@
   --slide-spacing: 1rem;
   --slide-size: 100%;
 }
-.embla__viewport {
-  overflow: hidden;
-}
 .embla__container {
   backface-visibility: hidden;
   display: flex;
