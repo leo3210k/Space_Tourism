@@ -16,13 +16,15 @@ function PickDestination() {
           </span>
         </div>
         <hr className='w-11/12 border-bright_gray'/>
-        <div className='flex flex-col items-center gap-2'>
-          <span className='font-barlow text-sm text-tropical_blue tracking-widest'>AVG. DISTANCE</span>
-          <span className='font-bellefair text-3xl text-white'>{distance}</span>
-        </div>
-        <div className='flex flex-col items-center gap-2'>
-          <span className='font-barlow text-sm text-tropical_blue tracking-widest'>EST. TRAVEL TIME</span>
-          <span className='font-bellefair text-3xl text-white'>{travel_days}</span>
+        <div className=''>
+          <div className='flex flex-col items-center gap-2'>
+            <span className='font-barlow text-sm text-tropical_blue tracking-widest'>AVG. DISTANCE</span>
+            <span className='font-bellefair text-3xl text-white'>{distance}</span>
+          </div>
+          <div className='flex flex-col items-center gap-2'>
+            <span className='font-barlow text-sm text-tropical_blue tracking-widest'>EST. TRAVEL TIME</span>
+            <span className='font-bellefair text-3xl text-white'>{travel_days}</span>
+          </div>
         </div>
       </TabsContent>
     )
