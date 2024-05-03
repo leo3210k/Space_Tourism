@@ -7,6 +7,7 @@ function CustomLink({ path, name }) {
   return (
     <Link to={path} className="relative group py-10">
       <li>
+        <span className='hidden lg:inline'>{number}</span>
         {name}
         <span className={`
           h-[3px] inline-block
