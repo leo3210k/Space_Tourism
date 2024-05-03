@@ -6,7 +6,7 @@ function CustomLink({ path, name, number='00' }) {
 
   return (
     <Link to={path} className="relative group py-10">
-      <li className='lg:flex lg:gap-3'>
+      <li className='lg:flex lg:gap-3 lg:text-base'>
         <span className='hidden lg:inline'>{number}</span>
         {name}
         <span className={`
