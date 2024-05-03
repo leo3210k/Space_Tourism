@@ -36,7 +36,7 @@ function PickDestination() {
         <span className='font-bold text-white/25'>01</span>
         <span className='text-white uppercase'>pick your destination</span>
       </div>
-      <Tabs defaultValue="moon" className="w-[400px] md:w-11/12 flex flex-col lg:flex-row items-center md:gap-2 text-white">
+      <Tabs defaultValue="moon" className="w-[400px] md:w-11/12 flex flex-col lg:flex-row lg:justify-evenly items-center md:gap-2 text-white">
         <div>
           <TabsContent value="moon"><img src={moon} className='w-40 h-40 md:w-72 md:h-72' alt="moon" /></TabsContent>
           <TabsContent value="mars"><img src={mars} className='w-40 h-40 md:w-72 md:h-72' alt="mars" /></TabsContent>
