@@ -16,7 +16,7 @@ function Header() {
       <MenuToggle isSideMenuOpen={isSideMenuOpen} toggle={() => setIsSideMenuOpen(!isSideMenuOpen)} />
       <SideMenu isSideMenuOpen={isSideMenuOpen}/>
       <div className='hidden relative lg:w-7/12 md:flex bg-dusty_gray/[.04] lg:backdrop-blur-2xl'>
-        <hr className='hidden lg:block absolute w-6/12 border-dusty_gray top-1/2 -left-[25rem]'/>
+        <hr className='hidden lg:block absolute w-6/12 border-white/40 top-1/2 -left-[24rem]'/>
         <ol className='flex gap-x-10 font-barlow text-sm lg:text-base text-white tracking-widest uppercase px-10 lg:pl-32'>
           <CustomLink name="home" path="/"/>
           <CustomLink name="destination" path="/destination"/>
