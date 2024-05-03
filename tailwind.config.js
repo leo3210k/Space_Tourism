@@ -80,7 +80,11 @@ module.exports = {
         'home-mobile': "url('/src/assets/home/background-home-tablet.jpg')",
         'destination-mobile': "url('/src/assets/destination/background-destination-tablet.jpg')",
         'crew-mobile': "url('/src/assets/crew/background-crew-tablet.jpg')",
-        'technology-mobile': "url('/src/assets/technology/background-technology-tablet.jpg')"
+        'technology-mobile': "url('/src/assets/technology/background-technology-tablet.jpg')",
+        'home-desktop': "url('/src/assets/home/background-home-desktop.jpg')",
+        'destination-desktop': "url('/src/assets/destination/background-destination-desktop.jpg')",
+        'crew-desktop': "url('/src/assets/crew/background-crew-desktop.jpg')",
+        'technology-desktop': "url('/src/assets/technology/background-technology-desktop.jpg')"
       }
     },
   },
