@@ -18,10 +18,10 @@ function Header() {
       <div className='hidden relative lg:w-7/12 md:flex bg-dusty_gray/[.04] lg:backdrop-blur-2xl'>
         <hr className='hidden lg:block absolute w-6/12 border-white/40 top-1/2 -left-[24rem]'/>
         <ol className='flex gap-x-10 font-barlow text-sm lg:text-base text-white tracking-widest uppercase px-10 lg:pl-32'>
-          <CustomLink name="home" path="/"/>
-          <CustomLink name="destination" path="/destination"/>
-          <CustomLink name="crew" path="/crew"/>
-          <CustomLink name="technology" path="/technology"/>
+          <CustomLink name="home" path="/" number="00"/>
+          <CustomLink name="destination" path="/destination" number="01"/>
+          <CustomLink name="crew" path="/crew" number="02"/>
+          <CustomLink name="technology" path="/technology" number="03"/>
         </ol>
       </div>
     </header>
