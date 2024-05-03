@@ -3,7 +3,7 @@ import './Home.css';
 function Home() {
   return (
     <div className="flex flex-col lg:flex-row items-center mt-16 md:mt-24 lg:mt-[30vh]">
-      <div className='flex flex-col items-center'>
+      <div className='lg:w-4/12 flex flex-col items-center'>
         <span className="text-base md:text-xl lg:text-3xl font-barlow text-tropical_blue uppercase tracking-widest">so, you want to travel to</span>
         <h1 className="text-8xl md:text-[9.375rem] font-bellefair text-white uppercase mt-8">space</h1>
         <span className="w-5/6 md:w-3/6 text-base md:text-lg text-tropical_blue font-barlow line-clamp-5 text-center md:leading-7 mt-8 md:mt-6">
