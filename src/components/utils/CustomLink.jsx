@@ -1,7 +1,7 @@
 import './CustomLink.css';
 import { Link, useLocation } from 'react-router-dom';
 
-function CustomLink({ path, name }) {
+function CustomLink({ path, name, number='00' }) {
   let location = useLocation();
 
   return (
