@@ -8,20 +8,20 @@ import titan from '../assets/destination/image-titan.png'
 function PickDestination() {
   const DestinationsContent = function({ value, title, description, distance, travel_days }) {
     return (
-      <TabsContent className='flex flex-col items-center gap-6 md:gap-12' value={value}>
-        <div className='flex flex-col items-center'>
+      <TabsContent className='flex flex-col items-center lg:items-start gap-6 md:gap-12' value={value}>
+        <div className='flex flex-col items-center lg:items-start'>
           <h1 className='text-6xl md:text-7xl lg:text-8xl font-bellefair text-white'>{title}</h1>
-          <span className='w-5/6 text-base md:text-lg text-tropical_blue font-barlow line-clamp-5 text-center mt-1 md:mt-5'>
+          <span className='w-5/6 text-base md:text-lg text-tropical_blue font-barlow line-clamp-5 text-center lg:text-start mt-1 md:mt-5'>
             {description}
           </span>
         </div>
         <hr className='w-11/12 border-bright_gray'/>
         <div className='flex flex-col md:flex-row gap-6 md:gap-20'>
-          <div className='flex flex-col items-center gap-2'>
+          <div className='flex flex-col items-center lg:items-start gap-2'>
             <span className='font-barlow text-sm text-tropical_blue tracking-widest'>AVG. DISTANCE</span>
             <span className='font-bellefair text-3xl text-white'>{distance}</span>
           </div>
-          <div className='flex flex-col items-center gap-2'>
+          <div className='flex flex-col items-center lg:items-start gap-2'>
             <span className='font-barlow text-sm text-tropical_blue tracking-widest'>EST. TRAVEL TIME</span>
             <span className='font-bellefair text-3xl text-white'>{travel_days}</span>
           </div>
@@ -43,7 +43,7 @@ function PickDestination() {
           <TabsContent value="europa"><img src={europa} className='w-40 h-40 md:w-72 md:h-72 lg:w-[27.8rem] lg:h-[27.8rem]' alt="europa" /></TabsContent>
           <TabsContent value="titan"><img src={titan} className='w-40 h-40 md:w-72 md:h-72 lg:w-[27.8rem] lg:h-[27.8rem]' alt="titan" /></TabsContent>
         </div>
-        <div className='lg:w-6/12 flex flex-col items-center md:gap-2'>
+        <div className='lg:w-6/12 flex flex-col items-center lg:items-start md:gap-2'>
           <TabsList className="font-barlow my-6">
             <TabsTrigger value="moon">MOON</TabsTrigger>
             <TabsTrigger value="mars">MARS</TabsTrigger>
