@@ -16,6 +16,7 @@ function Header() {
       <MenuToggle isSideMenuOpen={isSideMenuOpen} toggle={() => setIsSideMenuOpen(!isSideMenuOpen)} />
       <SideMenu isSideMenuOpen={isSideMenuOpen}/>
       <div className='hidden relative md:flex'>
+        <hr className='absolute w-4/12 border-dusty_gray'/>
         <ol className='flex gap-x-10 font-barlow text-sm text-white bg-dusty_gray/[.04] tracking-widest uppercase px-10'>
           <CustomLink name="home" path="/"/>
           <CustomLink name="destination" path="/destination"/>
