@@ -43,7 +43,7 @@ function PickDestination() {
           <TabsContent value="europa"><img src={europa} className='w-40 h-40 md:w-72 md:h-72' alt="europa" /></TabsContent>
           <TabsContent value="titan"><img src={titan} className='w-40 h-40 md:w-72 md:h-72' alt="titan" /></TabsContent>
         </div>
-        <div>
+        <div className='flex flex-col items-center md:gap-2'>
           <TabsList className="font-barlow my-6">
             <TabsTrigger value="moon">MOON</TabsTrigger>
             <TabsTrigger value="mars">MARS</TabsTrigger>
