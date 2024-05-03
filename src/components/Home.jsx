@@ -12,7 +12,7 @@ function Home() {
           truly out of this world experience!
         </span>
       </div>
-      <div className="relative group cursor-pointer lg:self-center mt-16 md:mt-36 lg:mt-0">
+      <div className="relative group cursor-pointer mt-16 md:mt-36 lg:mt-0">
         <div className="absolute w-48 h-48 md:w-60 md:h-60 lg:w-72 lg:h-72 bg-dusty_gray opacity-20 rounded-full transition-all duration-1000 group-hover:scale-150 z-0"></div>
         <div className="relative w-48 h-48 md:w-60 md:h-60 lg:w-72 lg:h-72 flex justify-center items-center text-xl md:text-3xl lg:text-4xl font-bellefair text-vulcan bg-white rounded-full uppercase z-10">
           explore
