@@ -60,4 +60,7 @@
     width: 0.938rem;
     height: 0.938rem;
   }
+  .embla__dots {
+    gap: 1.5rem;
+  }
 }
