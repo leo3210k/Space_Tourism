@@ -31,7 +31,7 @@ const EmblaCarousel = (props) => {
       <div className={`${styles.embla__viewport}`} ref={emblaRef}>
         <div className={`${styles.embla__container}`}>
           {slides.map((person) => (
-            <div className={`${styles.embla__slide} flex flex-col items-center`} key={person}>
+            <div className={`${styles.embla__slide} flex flex-col items-center lg:items-start`} key={person}>
               <img className='md:absolute h-56 md:h-[33.25rem] md:-bottom-[40.5rem]' src={person.src} alt={person.name} />
               <hr className='md:hidden w-10/12 border-bright_gray'/>
               <div className='lg:w-6/12 flex flex-col items-center lg:items-start mt-16 md:mt-0'>
