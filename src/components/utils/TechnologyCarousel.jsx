@@ -26,8 +26,6 @@ const EmblaCarousel = (props) => {
     onNavButtonClick
   )
 
-  console.log(window.innerWidth)
-
   return (
     <section className={`${styles.embla} relative`}>
       <div className={`${styles.embla__viewport}`} ref={emblaRef}>
