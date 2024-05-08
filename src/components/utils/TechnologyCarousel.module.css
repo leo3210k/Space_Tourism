@@ -68,6 +68,10 @@
 }
 
 @media (min-width: 1024px) {
+  .embla__dots {
+    flex-direction: column;
+    gap: 2rem;
+  }
   .embla__dot {
     width: 5rem;
     height: 5rem;
