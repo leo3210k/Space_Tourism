@@ -22,7 +22,7 @@ function App() {
   }, [location.pathname])
 
   return (
-    <div className={`app min-h-screen bg-technology-desktop`}>
+    <div className={`app min-h-screen bg-home-desktop`}>
       <Header />
       <Outlet />
     </div>
