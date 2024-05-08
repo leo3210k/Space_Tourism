@@ -3,6 +3,7 @@
   margin: auto;
   --slide-height: 19rem;
   --slide-spacing: 1rem;
+  --slide-spacing_desktop: 6rem;
   --slide-size: 100%;
 }
 .embla__container {
@@ -68,6 +69,12 @@
 }
 
 @media (min-width: 1024px) {
+  .embla__container {
+    margin-left: calc(var(--slide-spacing_desktop) * -1);
+  }
+  .embla__slide {
+    padding-left: var(--slide-spacing_desktop);
+  }
   .embla__dots {
     flex-direction: column;
     gap: 2rem;
