@@ -50,7 +50,7 @@ const EmblaCarousel = (props) => {
               <DotButton
                 key={index}
                 onClick={() => onDotButtonClick(index)}
-                className={`${styles.embla__dot} font-bellefair after:content-['${index}']`.concat(
+                className={`${styles.embla__dot} font-bellefair md:text-2xl lg:text-3xl after:content-['${index}']`.concat(
                   index === selectedIndex ? ` ${styles.embla__dot_selected}` : ''
                 )}
               />
