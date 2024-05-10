@@ -78,6 +78,11 @@
   box-sizing: border-box;
 }
 
+@media (min-width: 1536px) {
+  html {
+    font-size: 18px;
+  }
+}
 @media (min-width: 1280px) {
   html {
     font-size: 16px;
