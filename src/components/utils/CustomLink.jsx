@@ -14,7 +14,7 @@ function CustomLink({ path, name, number='00' }) {
           absolute left-0 bottom-0 bg-white
           group-hover:w-full transition-[width] ease duration-300
           underline-offset-4 
-          ${location.pathname === path ? "w-full" : "w-0"}
+          ${location.pathname === path || location.pathname === `${path}/` ? "w-full" : "w-0"}
           `}
         >&nbsp;</span>
       </li>
